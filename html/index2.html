@@ -1,0 +1,136 @@
+<html lang='ar'>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style>
+        body
+    {
+        margin: 0;
+        padding: 0;
+        background: url('blue.jpg');
+        background-size: cover;
+        color:black;
+        font-family: sans-serif;
+    } 
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 25%;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+    </style>
+        <style>
+    
+
+    .loginbox{
+        width:460px;
+        height:1500px;
+        background:#000;
+        color:#fff;
+        opacity: .8;
+        top:160%;
+        left:50%;
+        position:absolute;
+        transform: translate(-50%,-50%);
+        box-sizing:border-box;  
+        padding: 30px 30px;
+    }
+    .school{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        position:absolute;
+        top:-50px;
+        left: calc(50% - 50px);
+    }
+    h1{
+        font-weight: bold;
+        margin-left:15%;
+    }
+    .loginbox input[type="text"], input[type="number"], input[type="date"], input[type="password"], input[type="checkbox"]{
+        border:none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        height:25px;
+        color:black;
+        font-size:16px;
+    }
+    .loginbox input[type="submit"]{
+        border:none;
+        height:40px;
+        color:red;
+        font-size:18px;
+        border-radius:20px;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    div#layout {
+      text-align: center;
+    }
+
+    div#container {
+      width: 1000px;
+      height: 600px;
+      margin: auto;
+    }
+
+    text.title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    text.label {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    </style>
+    
+    </head>
+    
+    <body>
+        <div id='errormsg'></div>
+        
+        <div id="mainMenu">
+            <h1 style='margin-left:660px'>نادي الهلال الاحمر</h1>
+
+            <ul>
+              <li><a id="app1" href="#">استمارة طلب تطوع</a></li>
+              <li><a href="Foriegnrequest.php">استمارة طلب تطوع غير المصريين</a></li>
+              <li><a href="form1.php">استمارة تجديد العضوية</a></li>
+              <li><a href="form2.php">استمارة تجديد العضوية غير المصريين</a></li>
+            </ul>
+        
+        </div>
+        
+        <div id="signupForm"></div>
+        <div id="tablehere"></div>
+        <div id="updateForm"></div>
+
+
+    
+        <script src="../js/users.js"></script>
+
+    </body>
+</html>
